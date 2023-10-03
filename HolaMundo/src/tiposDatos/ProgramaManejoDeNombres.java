@@ -4,16 +4,22 @@ import java.util.Scanner;
 
 public class ProgramaManejoDeNombres {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        String nombre1, nombre2, nombre3;
-        System.out.println("Ingrese el nombre de un integrante de la familia en pantalla; ");
-        nombre1 = input.next();
-        System.out.println("Ingrese el nombre de un integrante de la familia en pantalla; ");
-        nombre2 = input.next();
-        System.out.println("Ingrese el nombre de un integrante de la familia en pantalla; ");
-        nombre3 = input.next();
+        System.out.println("Ingrese un nombre de un familiar:");
+        String nombreA = scanner.nextLine();
+        String nombreA2 = nombreA.toUpperCase().charAt(1) + "." + nombreA.substring(nombreA.length()-2);
 
+        System.out.println("Ingrese otro nombre de un familiar:");
+        String nombreB = scanner.nextLine();
+        String nombreB2 = nombreB.toUpperCase().charAt(1) + "." + nombreB.substring(nombreB.length()-2);
 
+        System.out.println("Ingrese otro nombre de un familiar:");
+        String nombreC = scanner.nextLine();
+        String nombreC2 = nombreC.toUpperCase().charAt(1) + "." + nombreC.substring(nombreC.length()-2);
+
+        String resultado = nombreA2 + "_" + nombreB2 + "_" + nombreC2;
+
+        System.out.println(resultado);
     }
 }
