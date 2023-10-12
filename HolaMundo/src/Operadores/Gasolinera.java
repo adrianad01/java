@@ -1,12 +1,8 @@
 package Operadores;
-
 import java.util.Scanner;
-
 public class Gasolinera {
     public static void main(String[] args) {
-
         Scanner input = new Scanner(System.in);
-
         int capacidad;
         System.out.println("Ingrese la cantidad de litros del estanque: ");
         capacidad = input.nextInt();
