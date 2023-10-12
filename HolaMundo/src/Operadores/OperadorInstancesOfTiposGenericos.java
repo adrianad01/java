@@ -1,9 +1,9 @@
 package Operadores;
 
-public class OperadorInstancesOf {
+public class OperadorInstancesOfTiposGenericos {
     public static void main(String[] args) {
 
-        String texto = "Creando un objeto de la clase String.... que tal1";
+        Object texto = "Creando un objeto de la clase String.... que tal1";
         Integer num = 7;
 
         Boolean b1 = texto instanceof String;
