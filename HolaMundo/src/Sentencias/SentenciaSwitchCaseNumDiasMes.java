@@ -1,6 +1,7 @@
 package Sentencias;
 import java.util.Scanner;
-public class SentenciaIfElseNumDiasMes {
+
+public class SentenciaSwitchCaseNumDiasMes {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int days;
