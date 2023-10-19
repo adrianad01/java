@@ -11,7 +11,7 @@ public class EjercicioCuatro {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int saldoInicial, saldoFinal, saldoRetirar, depositarDinero;
-        String Option, retirarDinero, consultaSaldo;
+        String Option, retirarDinero;
 
         System.out.println("Ingresa el monto de tu saldo Inicial: ");
         saldoInicial = input.nextInt();
@@ -26,11 +26,6 @@ public class EjercicioCuatro {
                 saldoFinal = saldoInicial - saldoRetirar;
                 String error = saldoRetirar > saldoInicial ? "Operacion no validada, no puedes retirar más dinero de lo que tienes en tu cuenta." : "Retiraste $"+saldoRetirar+" y tu saldo final es: $"+saldoFinal;
                 System.out.println(error);
-                /* if (saldoRetirar > saldoInicial){
-                    System.out.println("Operacion no validada, no puedes retirar más dinero de lo que tienes en tu cuenta.");
-                } else {
-                    System.out.println("Retiraste $"+saldoRetirar+" y tu saldo final es: $"+saldoFinal);
-                } */
                 break;
             case "consulta":
                 System.out.println("Tu saldo es: $" +saldoInicial);
