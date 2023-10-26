@@ -38,8 +38,6 @@ public class EjercicioCuatro {
                 break;
             default:
                 System.out.println("No corresponde a las opciones.");
-
         }
-
     }
 }
