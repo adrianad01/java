@@ -1,10 +1,8 @@
 public class Automovil {
-
     String fabricante;
     String modelo;
     String color = "azul";
     double cilindrada;
-
 
     public String detalle() {
         StringBuilder sb = new StringBuilder();
