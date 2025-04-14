@@ -20,11 +20,5 @@ public class Ejercicio8 {
         System.out.println("Ingresa un numero: ");
         int[] num = new int[]{sc.nextInt()};
 
-        for (int num1 : num) {
-            if (num == 0){
-                sc.close();
-            }
-        }
-
     }
 }
