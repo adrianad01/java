@@ -1,13 +1,22 @@
 package lambda;
 
 import java.util.Comparator;
+import java.util.function.BiConsumer;
+import java.util.function.Consumer;
 
 public class LambdaExamples {
 
     public static void main(String[] args) {
 
-        LambdaInterface lambda = () -> System.out.println("Hello Lambda");
+        Consumer<String> consumer = saludo -> {
+            System.out.println(saludo);
+        };
 
-        lambda.apply();
+        consumer.accept("Hello");
+
+        BiConsumer<String, Integer> biConsumer = (name, age) ->
+                System.out.println(name + " has " + age + " years old");
+
+        biConsumer.accept("Adrian", 20);
     }
 }

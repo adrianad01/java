@@ -20,7 +20,7 @@ public class RabbitMQProducer {
     @Value("${rabbitmq.routing.key}")
     private String routingKey;
 
-    private RabbitTemplate rabbitTemplate;
+    private final RabbitTemplate rabbitTemplate;
 
     public RabbitMQProducer(RabbitTemplate rabbitTemplate) {
         this.rabbitTemplate = rabbitTemplate;
