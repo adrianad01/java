@@ -1,14 +1,17 @@
 package lambda.ejercicios;
 
-import java.util.function.Predicate;
+import java.util.function.Consumer;
 
+/*
+ * EJERCICIO 2:
+ * Usa una expresión lambda con la interfaz Consumer<String> para imprimir en consola
+ * el mensaje "Hola, <nombre>" donde <nombre> es el valor recibido.
+ */
 public class Ejercicio2 {
     public static void main(String[] args) {
 
-        // Crear un Predicate<Integer> que reciba un número y retorne true si es par, false si es impar.
+        Consumer<String> print = name -> System.out.println("Hola, " + name);
+        print.accept("Adrian");
 
-        Predicate<Integer> parOrNot = number -> number % 2 == 0;
-        System.out.println(parOrNot.test(5));
-        System.out.println(parOrNot.test(6));
     }
 }
