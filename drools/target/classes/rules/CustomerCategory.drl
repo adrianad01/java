@@ -1,0 +1,23 @@
+package rules
+import io.reactordevelop.dto.Customer;
+
+rule "Apply VIP Category"
+    when
+        $customer : Customer(totalPurchases > 10000, numberOfPurchases > 20)
+    then
+        $customer.setCategory("VIP");
+end
+
+rule "Apply Regular Category"
+    when
+        $customer : Customer(totalPurchases >= 2000 && totalPurchases <= 10000, numberOfPurchases > 15)
+    then
+        $customer.setCategory("Regular");
+end
+
+rule "Apply Occasional Category"
+    when
+        $customer : Customer(totalPurchases < 2000 && totalPurchases > 0, numberOfPurchases > 5)
+    then
+        $customer.setCategory("Occasional");
+end
