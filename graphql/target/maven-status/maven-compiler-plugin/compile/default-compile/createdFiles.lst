@@ -1,1 +1,8 @@
-org\bancobase\resolver\HelloResolver.class
+org/bancobase/ProductDataSeeder.class
+org/bancobase/dto/Product.class
+org/bancobase/service/ProductService.class
+org/bancobase/GraphQLApplication.class
+org/bancobase/repository/ProductRepository.class
+org/bancobase/entity/ProductEntity.class
+org/bancobase/resolver/ProductResolver.class
+org/bancobase/resolver/HelloResolver.class

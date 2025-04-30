@@ -15,12 +15,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="graphql" />
         <module name="drools" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="drools" options="-parameters" />
+      <module name="graphql" options="-parameters" />
       <module name="rabbit" options="-parameters" />
     </option>
   </component>

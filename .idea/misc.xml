@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/rabbit/pom.xml" />
         <option value="$PROJECT_DIR$/drools/pom.xml" />
+        <option value="$PROJECT_DIR$/graphql/pom.xml" />
       </list>
     </option>
   </component>
