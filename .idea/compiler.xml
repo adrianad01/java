@@ -17,6 +17,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="graphql" />
       </profile>
+      <profile name="Annotation profile for java-core" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
+        </processorPath>
+        <module name="java-core" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="drools" target="21" />
